@@ -17,17 +17,15 @@
 </head>
 <body>
 
-  <my-name first="KaiK" last="Creator"></my-name>
   <progress-bar progress="30"></progress-bar>
   &nbsp;
-  <my-slider min="0" max="100" value="33"></my-slider>
+  <my-slider min="0" max="100" value="30"></my-slider>
 
 </body>
 
-<script>
+ <script>
   let progressBar = document.querySelector('progress-bar');
   let slider = document.querySelector('my-slider');
-
 
   progressBar.addEventListener("progressDone", ()=>{console.log("progress done!!");});
   slider.addEventListener("valueChanged",(event)=>{
