@@ -1,0 +1,36 @@
+my-slider {
+    
+    .slider-container {
+      width: 100%;
+  
+      .slider {
+        -webkit-appearance: none;
+        appearance: none;   
+        width: 100%;
+        height: 20px;
+        background: lighten(#333, 60%);
+        outline: none;
+        opacity: 0.8;
+        transition: opacity .2s;
+  
+        &:hover {
+          opacity: 1;
+        }
+  
+        &::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          width: 20px;
+          height: 20px;
+          background: #333;
+          cursor: pointer;
+        }
+  
+        &::-moz-range-thumb {
+          width: 20px;
+          height: 20px;
+          background: #333;
+          cursor: pointer;
+        }
+      }
+    }
+  }
